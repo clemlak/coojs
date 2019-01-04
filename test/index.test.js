@@ -12,8 +12,4 @@ describe('coojs', () => {
   it('Should create a new contract instance', () => {
     assert.equal(coojs.getInstance().options.address, contractAddress);
   });
-
-  it('Should pass the test', () => {
-    assert.equal(true, true, 'True is not true !');
-  });
 });
