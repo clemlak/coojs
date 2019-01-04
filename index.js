@@ -47,7 +47,7 @@ class Coojs {
       gas: '4000000',
     };
 
-    this.web3.eth.accounts.signTransaction(tx, this.privateKey)
+    return this.web3.eth.accounts.signTransaction(tx, this.privateKey)
       .then(transaction => this.web3.eth.sendSignedTransaction(transaction.rawTransaction))
       .then((receipt) => {
         console.log(receipt);
